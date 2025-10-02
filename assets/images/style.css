@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Bebas Neue", sans-serif;
 }
@@ -58,4 +62,27 @@ section {
     width: 300px;
 }
 
+footer {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
 
+.footer-link{
+    opacity: 75%;
+}
+
+.footer-link:hover{
+    opacity: 100%;
+    
+}
+.copyright{
+    margin-top: 100px ; 
+}
+
+.hero.col:nth-child(1){
+    -o-animation-delay: 0.2s;
+}
+
+.hero{
+    overflow: hidden;
+}
