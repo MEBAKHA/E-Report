@@ -54,9 +54,20 @@
      <!-- all report-->
       <section id="report">
         <div class="container">
-          <div class="text-center">
-              <h1 class="fw-bold mb-4 text-primary-emphasis" data-aos="fade-up" data-aos-duration="1000">all report</h1>
-            <p class="lh-lg text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem atque minus odit soluta consequuntur quos culpa aut corrupti earum?</p>
+          <div class="d-flex justify-content-center justify-content-md-between align-items-center flex-wrap mb-5">
+            <div class="col-md-8 text-center text-md-start">
+                <h1 class="fw-bold mb-4 text-primary-emphasis" data-aos="fade-up" data-aos-duration="1000">all report</h1>
+              <p class="lh-lg text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem atque minus odit soluta consequuntur quos culpa aut corrupti earum?</p>
+            </div>
+            <div>
+              <button class="btn btn-primary px-3" data-bs-toggle="modal" data-bs-target="#addModal">
+                <i class="fa-solid fa-plus fa-spin-pulse"></i>
+                Tambah Laporan
+              </button>
+            </div>
+          </div>
+
+
 
              <!-- filter-->
             <div class="row g-3 mb-5">
@@ -188,24 +199,74 @@
         
       </section>
 
-             </div>
+      </div>
 
              <!-- pagination-->
               <nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center">
-    <li class="page-item"><a class="page-link disabled" href="#">Previous</a></li>
-    <li class="page-item"><a class="page-link active" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-  </ul>
-</nav>
+                <ul class="pagination justify-content-center">
+                  <li class="page-item"><a class="page-link disabled" href="#">Previous</a></li>
+                  <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
 
 
           </div>
         </div>
       </section>
       <!-- all report end -->
+       <!-- Modal -->
+        <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header bg-primary text-white">
+                <h1 class="modal-title fs-5 fw-sm-bold" id="exampleModalLabel">
+                  <i class="fa-solid fa-pen-to-square fa-shake"></i>
+                  create new report
+                </h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+               <form action="">
+                <div class="modal-body">
+                  <div class="mb-3">
+                    <label class="form-label fw-semibold" for="">judul laporan:</label>
+                    <input class="form-control shadow-sm" type="text" placeholder="masukkan judul laporan">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label fw-semibold" for="">pilih kategori:</label>
+                    <select class="form-select shadow-sm" id="">
+                      <option value="">pilih kategori</option>
+                      <option value="">fasilitasi</option>
+                      <option value="">akademik</option>
+                      <option value="">anonymous</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label fw-semibold" for="">deskripsi laporan:</label>
+                    <textarea class="form-control shadow-sm" name="" id="" rows="5" placeholder="masukkan deskripsi laporan"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label fw-semibold" for="">unggah gambar:</label>
+                    <input class="form-control shadow-sm" type="file" accept="image/*">
+                  </div>
+
+                </div>
+                  <div class="modal-footer ">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">
+                      <i class="fa-solid fa-paper-plane"></i>
+                      submit report
+                    </button>
+                </div>
+                
+
+               </form>
+              
+            </div>
+          </div>
+        </div>
        
    
 
